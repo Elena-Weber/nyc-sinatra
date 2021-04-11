@@ -2,5 +2,10 @@
 
 <!-- add content here -->
 
+<ul><% @landmarks.each do |landmark|%>
+<li><a href="/landmarks/<%= landmark.id %>"><%= landmark.name %>, <%= landmark.year_completed %></a></li>
+<% end %>
+</ul>
+
 <a class="button" href="/figures">Figures</a>
 <a class="button" href="/">Home</a>
